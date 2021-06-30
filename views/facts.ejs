@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Facts</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/stylesNew.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="background">
+      <div class="blur"></div>
+      <div class="bg-text Search">
+        <h1><%= Obj.title %></h1>
+        <img src=<%= Obj.imageURL %> alt="Astronomy Image Of The Day" width="480px" height="360px">
+        <p><%= Obj.explanation %></p>
+        <p><%= Obj.date %></p>
+        <footer class=" text-muted">&copy; Made by Raunaq Singh</footer>
+      </div>
+    </div>
+  </body>
+</html>
